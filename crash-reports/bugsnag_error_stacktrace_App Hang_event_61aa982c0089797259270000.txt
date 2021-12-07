@@ -1,0 +1,359 @@
+App Hang
+facebook::react::JSIExecutor::defaultTimeoutInvoker(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>)
+The app was terminated while unresponsive
+Dec 3rd, 2021, 22:20:28 UTC
+
+STACKTRACE
+
+CrashReporter Key:  e3b02a77800c0d6975bef70a27807ace8c8eac57
+Hardware Model:     iPhone14,2
+Process:            clockout
+Identifier:         com.clockout
+Version:            1.3.15
+Role:               Foreground
+OS Version:         iOS 15.1.1
+
+
+App Hang: The app was terminated while unresponsive
+
+0  libsystem_kernel.dylib  ___psynch_mutexwait
+1  libsystem_pthread.dylib __pthread_mutex_firstfit_lock_wait
+2  libsystem_pthread.dylib __pthread_mutex_firstfit_lock_slow
+3  clockout                facebook::react::JSIExecutor::defaultTimeoutInvoker(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>) (clockout)
+4  clockout                folly::Try<folly::Unit>::throwUnlessValue() const (clockout)
+5  clockout                grpc_core::XdsClient::ChannelState::RetryableCall<grpc_core::XdsClient::ChannelState::LrsCallState>::OnRetryTimerLocked(void*, grpc_error*) (clockout)
+6  UIKitCore               -[UIScrollView _notifyDidScroll]
+7  UIKitCore               -[UIScrollView setContentOffset:]
+8  UIKitCore               -[_UIQueuingScrollView _boundsDidChangeToSize:]
+9  UIKitCore               -[_UIQueuingScrollView setFrame:]
+10 UIKitCore               -[_UIPageViewControllerContentView layoutSubviews]
+11 UIKitCore               -[UIView(CALayerDelegate) layoutSublayersOfLayer:]
+12 QuartzCore              CA::Layer::layout_if_needed(CA::Transaction*)
+13 UIKitCore               -[UIView(Hierarchy) layoutBelowIfNeeded]
+14 clockout                grpc_core::XdsClient::ChannelState::RetryableCall<grpc_core::XdsClient::ChannelState::LrsCallState>::OnRetryTimerLocked(void*, grpc_error*) (clockout)
+15 clockout                grpc_core::XdsClient::ChannelState::RetryableCall<grpc_core::XdsClient::ChannelState::LrsCallState>::OnRetryTimerLocked(void*, grpc_error*) (clockout)
+16 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+17 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+18 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+19 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+20 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+21 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+22 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+23 UIKitCore               -[UIScrollView _didMoveFromWindow:toWindow:]
+24 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+25 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+26 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+27 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+28 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+29 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+30 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+31 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+32 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+33 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+34 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+35 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+36 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+37 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+38 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+39 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+40 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+41 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+42 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+43 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+44 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+45 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+46 UIKitCore               ___45-[UIView(Hierarchy) _postMovedFromSuperview:]_block_invoke
+47 UIKitCore               -[UIView(Hierarchy) _postMovedFromSuperview:]
+48 UIKitCore               -[UIView(Internal) _addSubview:positioned:relativeTo:]
+49 clockout                facebook::react::JSIExecutor::defaultTimeoutInvoker(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>) (clockout)
+50 clockout                facebook::react::JSIExecutor::defaultTimeoutInvoker(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>) (clockout)
+51 clockout                facebook::react::JSIExecutor::defaultTimeoutInvoker(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>) (clockout)
+52 clockout                facebook::react::JSIExecutor::defaultTimeoutInvoker(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>) (clockout)
+53 clockout                facebook::react::JSIExecutor::defaultTimeoutInvoker(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>) (clockout)
+54 clockout                facebook::react::JSIExecutor::defaultTimeoutInvoker(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>) (clockout)
+55 CoreFoundation          ___NSDICTIONARY_IS_CALLING_OUT_TO_A_BLOCK__
+56 CoreFoundation          -[__NSDictionaryM enumerateKeysAndObjectsWithOptions:usingBlock:]
+57 clockout                facebook::react::JSIExecutor::defaultTimeoutInvoker(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>) (clockout)
+58 clockout                facebook::react::JSIExecutor::defaultTimeoutInvoker(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>) (clockout)
+59 clockout                facebook::react::JSIExecutor::defaultTimeoutInvoker(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>) (clockout)
+60 clockout                facebook::react::JSIExecutor::defaultTimeoutInvoker(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>) (clockout)
+61 clockout                facebook::react::JSIExecutor::defaultTimeoutInvoker(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>) (clockout)
+62 clockout                facebook::react::JSIExecutor::defaultTimeoutInvoker(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>) (clockout)
+63 CoreFoundation          ___NSDICTIONARY_IS_CALLING_OUT_TO_A_BLOCK__
+64 CoreFoundation          -[__NSDictionaryM enumerateKeysAndObjectsWithOptions:usingBlock:]
+65 clockout                facebook::react::JSIExecutor::defaultTimeoutInvoker(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>) (clockout)
+66 clockout                facebook::react::JSIExecutor::defaultTimeoutInvoker(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>) (clockout)
+67 clockout                facebook::react::JSIExecutor::defaultTimeoutInvoker(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>) (clockout)
+68 clockout                facebook::react::JSIExecutor::defaultTimeoutInvoker(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>) (clockout)
+69 clockout                folly::Try<folly::Unit>::throwUnlessValue() const (clockout)
+70 clockout                folly::Try<folly::Unit>::throwUnlessValue() const (clockout)
+71 clockout                folly::Try<folly::Unit>::throwUnlessValue() const (clockout)
+72 UIKitCore               -[UIGestureRecognizerTarget _sendActionWithGestureRecognizer:]
+73 UIKitCore               __UIGestureRecognizerSendTargetActions
+74 UIKitCore               __UIGestureRecognizerSendActions
+75 UIKitCore               -[UIGestureRecognizer _updateGestureForActiveEvents]
+76 UIKitCore               __UIGestureEnvironmentUpdate
+77 UIKitCore               -[UIGestureEnvironment _updateForEvent:window:]
+78 UIKitCore               -[UIWindow sendEvent:]
+79 UIKitCore               -[UIApplication sendEvent:]
+80 UIKitCore               ___dispatchPreprocessedEventFromEventQueue
+81 UIKitCore               ___processEventQueue
+82 UIKitCore               _updateCycleEntry
+83 UIKitCore               __UIUpdateSequenceRun
+84 UIKitCore               _schedulerStepScheduledMainSection
+85 UIKitCore               _runloopSourceCallback
+86 CoreFoundation          ___CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+87 CoreFoundation          ___CFRunLoopDoSource0
+88 CoreFoundation          ___CFRunLoopDoSources0
+89 CoreFoundation          ___CFRunLoopRun
+90 CoreFoundation          _CFRunLoopRunSpecific
+91 GraphicsServices        _GSEventRunModal
+92 UIKitCore               -[UIApplication _run]
+93 UIKitCore               _UIApplicationMain
+94 clockout                0x1000066b8 (clockout)
+95 <unknown>               0x103089a20
+
+THREADS
+
+Thread 0 - com.apple.main-thread - (TH_STATE_WAITING)
+0  libsystem_kernel.dylib  ___psynch_mutexwait
+1  libsystem_pthread.dylib __pthread_mutex_firstfit_lock_wait
+2  libsystem_pthread.dylib __pthread_mutex_firstfit_lock_slow
+3  clockout                facebook::react::JSIExecutor::defaultTimeoutInvoker(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>) (clockout)
+4  clockout                folly::Try<folly::Unit>::throwUnlessValue() const (clockout)
+5  clockout                grpc_core::XdsClient::ChannelState::RetryableCall<grpc_core::XdsClient::ChannelState::LrsCallState>::OnRetryTimerLocked(void*, grpc_error*) (clockout)
+6  UIKitCore               -[UIScrollView _notifyDidScroll]
+7  UIKitCore               -[UIScrollView setContentOffset:]
+8  UIKitCore               -[_UIQueuingScrollView _boundsDidChangeToSize:]
+9  UIKitCore               -[_UIQueuingScrollView setFrame:]
+10 UIKitCore               -[_UIPageViewControllerContentView layoutSubviews]
+11 UIKitCore               -[UIView(CALayerDelegate) layoutSublayersOfLayer:]
+12 QuartzCore              CA::Layer::layout_if_needed(CA::Transaction*)
+13 UIKitCore               -[UIView(Hierarchy) layoutBelowIfNeeded]
+14 clockout                grpc_core::XdsClient::ChannelState::RetryableCall<grpc_core::XdsClient::ChannelState::LrsCallState>::OnRetryTimerLocked(void*, grpc_error*) (clockout)
+15 clockout                grpc_core::XdsClient::ChannelState::RetryableCall<grpc_core::XdsClient::ChannelState::LrsCallState>::OnRetryTimerLocked(void*, grpc_error*) (clockout)
+16 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+17 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+18 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+19 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+20 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+21 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+22 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+23 UIKitCore               -[UIScrollView _didMoveFromWindow:toWindow:]
+24 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+25 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+26 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+27 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+28 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+29 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+30 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+31 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+32 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+33 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+34 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+35 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+36 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+37 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+38 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+39 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+40 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+41 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+42 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+43 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+44 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+45 UIKitCore               -[UIView(Internal) _didMoveFromWindow:toWindow:]
+46 UIKitCore               ___45-[UIView(Hierarchy) _postMovedFromSuperview:]_block_invoke
+47 UIKitCore               -[UIView(Hierarchy) _postMovedFromSuperview:]
+48 UIKitCore               -[UIView(Internal) _addSubview:positioned:relativeTo:]
+49 clockout                facebook::react::JSIExecutor::defaultTimeoutInvoker(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>) (clockout)
+50 clockout                facebook::react::JSIExecutor::defaultTimeoutInvoker(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>) (clockout)
+51 clockout                facebook::react::JSIExecutor::defaultTimeoutInvoker(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>) (clockout)
+52 clockout                facebook::react::JSIExecutor::defaultTimeoutInvoker(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>) (clockout)
+53 clockout                facebook::react::JSIExecutor::defaultTimeoutInvoker(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>) (clockout)
+54 clockout                facebook::react::JSIExecutor::defaultTimeoutInvoker(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>) (clockout)
+55 CoreFoundation          ___NSDICTIONARY_IS_CALLING_OUT_TO_A_BLOCK__
+56 CoreFoundation          -[__NSDictionaryM enumerateKeysAndObjectsWithOptions:usingBlock:]
+57 clockout                facebook::react::JSIExecutor::defaultTimeoutInvoker(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>) (clockout)
+58 clockout                facebook::react::JSIExecutor::defaultTimeoutInvoker(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>) (clockout)
+59 clockout                facebook::react::JSIExecutor::defaultTimeoutInvoker(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>) (clockout)
+60 clockout                facebook::react::JSIExecutor::defaultTimeoutInvoker(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>) (clockout)
+61 clockout                facebook::react::JSIExecutor::defaultTimeoutInvoker(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>) (clockout)
+62 clockout                facebook::react::JSIExecutor::defaultTimeoutInvoker(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>) (clockout)
+63 CoreFoundation          ___NSDICTIONARY_IS_CALLING_OUT_TO_A_BLOCK__
+64 CoreFoundation          -[__NSDictionaryM enumerateKeysAndObjectsWithOptions:usingBlock:]
+65 clockout                facebook::react::JSIExecutor::defaultTimeoutInvoker(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>) (clockout)
+66 clockout                facebook::react::JSIExecutor::defaultTimeoutInvoker(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>) (clockout)
+67 clockout                facebook::react::JSIExecutor::defaultTimeoutInvoker(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>) (clockout)
+68 clockout                facebook::react::JSIExecutor::defaultTimeoutInvoker(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>) (clockout)
+69 clockout                folly::Try<folly::Unit>::throwUnlessValue() const (clockout)
+70 clockout                folly::Try<folly::Unit>::throwUnlessValue() const (clockout)
+71 clockout                folly::Try<folly::Unit>::throwUnlessValue() const (clockout)
+72 UIKitCore               -[UIGestureRecognizerTarget _sendActionWithGestureRecognizer:]
+73 UIKitCore               __UIGestureRecognizerSendTargetActions
+74 UIKitCore               __UIGestureRecognizerSendActions
+75 UIKitCore               -[UIGestureRecognizer _updateGestureForActiveEvents]
+76 UIKitCore               __UIGestureEnvironmentUpdate
+77 UIKitCore               -[UIGestureEnvironment _updateForEvent:window:]
+78 UIKitCore               -[UIWindow sendEvent:]
+79 UIKitCore               -[UIApplication sendEvent:]
+80 UIKitCore               ___dispatchPreprocessedEventFromEventQueue
+81 UIKitCore               ___processEventQueue
+82 UIKitCore               _updateCycleEntry
+83 UIKitCore               __UIUpdateSequenceRun
+84 UIKitCore               _schedulerStepScheduledMainSection
+85 UIKitCore               _runloopSourceCallback
+86 CoreFoundation          ___CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__
+87 CoreFoundation          ___CFRunLoopDoSource0
+88 CoreFoundation          ___CFRunLoopDoSources0
+89 CoreFoundation          ___CFRunLoopRun
+90 CoreFoundation          _CFRunLoopRunSpecific
+91 GraphicsServices        _GSEventRunModal
+92 UIKitCore               -[UIApplication _run]
+93 UIKitCore               _UIApplicationMain
+94 clockout                0x1000066b8 (clockout)
+95 <unknown>               0x103089a20
+
+Thread 1 - com.google.firebase.firestore.rpc - (TH_STATE_WAITING)
+0  libsystem_kernel.dylib  _poll
+1  clockout                grpc_core::AsyncConnectivityStateWatcherInterface::Notifier::SendNotification(void*, grpc_error*) (clockout)
+2  clockout                grpc_core::AsyncConnectivityStateWatcherInterface::Notifier::SendNotification(void*, grpc_error*) (clockout)
+3  clockout                closure_impl::closure_wrapper(void*, grpc_error*) (clockout)
+4  clockout                absl::lts_2020_02_25::base_internal::AtomicHook<void (*)(char const*, int, char const*, char const*, char const*)>::DummyFunction(char const*, int, char const*, char const*, char const*) (clockout)
+5  clockout                __cxa_throw (clockout)
+6  clockout                __cxa_throw (clockout)
+7  libdispatch.dylib       __dispatch_client_callout
+8  libdispatch.dylib       __dispatch_lane_serial_drain
+9  libdispatch.dylib       __dispatch_lane_invoke
+10 libdispatch.dylib       __dispatch_workloop_worker_thread
+11 libsystem_pthread.dylib __pthread_wqthread
+
+Thread 2 - com.apple.uikit.eventfetch-thread - (TH_STATE_WAITING)
+0 libsystem_kernel.dylib  _mach_msg_trap
+1 libsystem_kernel.dylib  _mach_msg
+2 CoreFoundation          ___CFRunLoopServiceMachPort
+3 CoreFoundation          ___CFRunLoopRun
+4 CoreFoundation          _CFRunLoopRunSpecific
+5 Foundation              -[NSRunLoop(NSRunLoop) runMode:beforeDate:]
+6 Foundation              -[NSRunLoop(NSRunLoop) runUntilDate:]
+7 UIKitCore               -[UIEventFetcher threadMain]
+8 Foundation              ___NSThread__start__
+9 libsystem_pthread.dylib __pthread_start
+
+Thread 3 - KSCrash Exception Handler (Secondary) - (TH_STATE_WAITING)
+0 libsystem_kernel.dylib  _mach_msg_trap
+1 libsystem_kernel.dylib  _mach_msg
+2 libsystem_kernel.dylib  _thread_suspend
+3 clockout                __cxa_throw (clockout)
+4 libsystem_pthread.dylib __pthread_start
+
+Thread 4 - KSCrash Exception Handler (Primary) - (TH_STATE_WAITING)
+0 libsystem_kernel.dylib  _mach_msg_trap
+1 libsystem_kernel.dylib  _mach_msg
+2 clockout                __cxa_throw (clockout)
+3 libsystem_pthread.dylib __pthread_start
+
+Thread 5 - com.bugsnag.app-hang-detector - (TH_STATE_RUNNING)
+0 clockout                __cxa_throw (clockout)
+1 clockout                __cxa_throw (clockout)
+2 Foundation              ___NSThread__start__
+3 libsystem_pthread.dylib __pthread_start
+4 libsystem_pthread.dylib _thread_start
+
+Thread 6 - com.facebook.react.JavaScript - (TH_STATE_WAITING)
+0 libsystem_kernel.dylib  _mach_msg_trap
+1 libsystem_kernel.dylib  _mach_msg
+2 CoreFoundation          ___CFRunLoopServiceMachPort
+3 CoreFoundation          ___CFRunLoopRun
+4 CoreFoundation          _CFRunLoopRunSpecific
+5 clockout                facebook::react::JSIExecutor::defaultTimeoutInvoker(std::__1::function<void ()> const&, std::__1::function<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > ()>) (clockout)
+6 Foundation              ___NSThread__start__
+7 libsystem_pthread.dylib __pthread_start
+
+Thread 7 - hades - (TH_STATE_WAITING)
+0 libsystem_kernel.dylib  ___psynch_cvwait
+1 libsystem_pthread.dylib __pthread_cond_wait
+2 libc++.1.dylib          std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)
+3 hermes                  facebook::jsi::JSError::~JSError()
+4 hermes                  facebook::jsi::JSError::~JSError()
+5 libsystem_pthread.dylib __pthread_start
+
+Thread 8 - hermes-chrome-inspector-conn - (TH_STATE_WAITING)
+0 libsystem_kernel.dylib  ___psynch_cvwait
+1 libsystem_pthread.dylib __pthread_cond_wait
+2 libc++.1.dylib          std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)
+3 clockout                folly::exception_wrapper::InPlace<facebook::hermes::inspector::MultipleCommandsPendingException>::get_exception_ptr_(folly::exception_wrapper const*) (clockout)
+4 clockout                facebook::hermes::inspector::detail::Thread::run(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::function<void ()>) (clockout)
+5 libsystem_pthread.dylib __pthread_start
+
+Thread 9 - hermes-inspector - (TH_STATE_WAITING)
+0 libsystem_kernel.dylib  ___psynch_cvwait
+1 libsystem_pthread.dylib __pthread_cond_wait
+2 libc++.1.dylib          std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)
+3 clockout                folly::exception_wrapper::InPlace<facebook::hermes::inspector::MultipleCommandsPendingException>::get_exception_ptr_(folly::exception_wrapper const*) (clockout)
+4 clockout                facebook::hermes::inspector::detail::Thread::run(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::function<void ()>) (clockout)
+5 libsystem_pthread.dylib __pthread_start
+
+Thread 10 - hades - (TH_STATE_WAITING)
+0 libsystem_kernel.dylib  ___psynch_cvwait
+1 libsystem_pthread.dylib __pthread_cond_wait
+2 libc++.1.dylib          std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)
+3 hermes                  facebook::jsi::JSError::~JSError()
+4 hermes                  facebook::jsi::JSError::~JSError()
+5 libsystem_pthread.dylib __pthread_start
+
+Thread 11 - com.apple.NSURLConnectionLoader - (TH_STATE_WAITING)
+0 libsystem_kernel.dylib  _mach_msg_trap
+1 libsystem_kernel.dylib  _mach_msg
+2 CoreFoundation          ___CFRunLoopServiceMachPort
+3 CoreFoundation          ___CFRunLoopRun
+4 CoreFoundation          _CFRunLoopRunSpecific
+5 CFNetwork               __CFURLStorageSessionCopyIdentifier
+6 Foundation              ___NSThread__start__
+7 libsystem_pthread.dylib __pthread_start
+
+Thread 12 - (TH_STATE_WAITING)
+0 libsystem_kernel.dylib  ___psynch_cvwait
+1 libsystem_pthread.dylib __pthread_cond_wait
+2 clockout                GRPC_SHADOW_sk_X509_NAME_call_free_func (clockout)
+3 clockout                grpc_core::AsyncConnectivityStateWatcherInterface::Notifier::SendNotification(void*, grpc_error*) (clockout)
+4 clockout                grpc_core::SliceHashTable<std::__1::unique_ptr<char, grpc_core::DefaultDeleteChar> >::DefaultValueCmp(std::__1::unique_ptr<char, grpc_core::DefaultDeleteChar> const&, std::__1::unique_ptr<char, grpc_core::DefaultDeleteChar> const&) (clockout)
+5 libsystem_pthread.dylib __pthread_start
+
+Thread 13 - (TH_STATE_WAITING)
+0 libsystem_kernel.dylib  ___psynch_cvwait
+1 libsystem_pthread.dylib __pthread_cond_wait
+2 clockout                GRPC_SHADOW_sk_X509_NAME_call_free_func (clockout)
+3 clockout                grpc_core::AsyncConnectivityStateWatcherInterface::Notifier::SendNotification(void*, grpc_error*) (clockout)
+4 clockout                grpc_core::SliceHashTable<std::__1::unique_ptr<char, grpc_core::DefaultDeleteChar> >::DefaultValueCmp(std::__1::unique_ptr<char, grpc_core::DefaultDeleteChar> const&, std::__1::unique_ptr<char, grpc_core::DefaultDeleteChar> const&) (clockout)
+5 libsystem_pthread.dylib __pthread_start
+
+Thread 14 - (TH_STATE_WAITING)
+0 libsystem_kernel.dylib  ___psynch_cvwait
+1 libsystem_pthread.dylib __pthread_cond_wait
+2 clockout                GRPC_SHADOW_sk_X509_NAME_call_free_func (clockout)
+3 clockout                grpc_core::SliceHashTable<std::__1::unique_ptr<char, grpc_core::DefaultDeleteChar> >::DefaultValueCmp(std::__1::unique_ptr<char, grpc_core::DefaultDeleteChar> const&, std::__1::unique_ptr<char, grpc_core::DefaultDeleteChar> const&) (clockout)
+4 clockout                grpc_core::SliceHashTable<std::__1::unique_ptr<char, grpc_core::DefaultDeleteChar> >::DefaultValueCmp(std::__1::unique_ptr<char, grpc_core::DefaultDeleteChar> const&, std::__1::unique_ptr<char, grpc_core::DefaultDeleteChar> const&) (clockout)
+5 libsystem_pthread.dylib __pthread_start
+
+Thread 15 - (TH_STATE_WAITING)
+0 libsystem_kernel.dylib  ___psynch_cvwait
+1 libsystem_pthread.dylib __pthread_cond_wait
+2 clockout                GRPC_SHADOW_sk_X509_NAME_call_free_func (clockout)
+3 clockout                grpc_core::SliceHashTable<std::__1::unique_ptr<char, grpc_core::DefaultDeleteChar> >::DefaultValueCmp(std::__1::unique_ptr<char, grpc_core::DefaultDeleteChar> const&, std::__1::unique_ptr<char, grpc_core::DefaultDeleteChar> const&) (clockout)
+4 clockout                grpc_core::SliceHashTable<std::__1::unique_ptr<char, grpc_core::DefaultDeleteChar> >::DefaultValueCmp(std::__1::unique_ptr<char, grpc_core::DefaultDeleteChar> const&, std::__1::unique_ptr<char, grpc_core::DefaultDeleteChar> const&) (clockout)
+5 libsystem_pthread.dylib __pthread_start
+
+Thread 16 - (TH_STATE_WAITING)
+0 libsystem_kernel.dylib  ___workq_kernreturn
+1 libsystem_pthread.dylib __pthread_wqthread
+
+Thread 17 - (TH_STATE_WAITING)
+0 libsystem_kernel.dylib  ___workq_kernreturn
+1 libsystem_pthread.dylib __pthread_wqthread
+
+Thread 18 - (TH_STATE_WAITING)
+0 libsystem_kernel.dylib  ___workq_kernreturn
+1 libsystem_pthread.dylib __pthread_wqthread
+
+Thread 19 - (TH_STATE_WAITING)
+0 unknown file unknown method
